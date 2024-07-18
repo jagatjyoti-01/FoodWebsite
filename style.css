@@ -1,0 +1,258 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* css veriable */
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#logo {
+    margin: 3px -27px;
+}
+
+#logo img {
+    height: 43px;
+    width: 43px;
+    margin: 7px 45px;
+}
+
+#navbar ul {
+    display: flex;
+    /* color: white; */
+
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.1rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+
+
+}
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 311px;
+    top: 0%;
+    position: relative;
+
+
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./img/spaghetti-1932466_1280.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.99;
+    z-index: -1;
+
+}
+
+#home h1 {
+    text-align: center;
+    color: white;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: serif;
+}
+
+/* utility class  */
+.h-primary {
+    font-size: 2.2rem;
+    padding: 12px;
+    font-style: 'Bree_Serif.zip';
+
+}
+
+.btn {
+    padding: 2px 5px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 14px;
+    font-size: 1.2rem;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+    background-color:gray;
+    
+}
+
+/* our service */
+
+/* 2nd utility class */
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 5px 51px;
+
+}
+#services{
+    display: flex;
+    margin: 3px 1px;
+    padding: 4px 6px;
+
+}
+#services .box{
+    border: 2px solid red;
+    margin: 0px 9px;
+    border-radius: 30px;
+    padding: 3px 43px;
+    background-color: #cec4c4;
+    margin-bottom: 18px;
+
+}
+#services .box img{
+    height: 116px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+.head{
+    display: flex;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 12px;
+
+}
+.para{
+    font-size: small;
+    font-family: serif;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+#client-section h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+
+}
+#client-section {
+    height:250px;
+    position: relative;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/paprika-3212137_640.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    width: 136px;
+}
+.client-item{
+    padding: 34px;
+}
+
+/*contact section*/
+#contact{
+    position:relative;
+    
+}
+#contact::before{
+content: "";
+background: url('../img/download.jpg') no-repeat center center/cover;
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.5;
+}
+footer{
+    background: black;
+    color: white;
+   padding-left: 433px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 23px;
+    font-size: 2.5rem;
+}
+
+

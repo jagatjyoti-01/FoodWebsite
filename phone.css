@@ -1,0 +1,25 @@
+ /*navigation*/
+ #navbar{
+    flex-direction: column;
+ }
+ /*home*/
+ #home{
+    height: 280px;
+    padding: 24px;
+}
+ #home::before{
+    height: 370px;
+}
+/* service section */
+#services{
+    flex-direction: column;
+
+}
+#services.box{
+
+}
+ 
+/* client section */
+#clients{
+    overflow: hidden;
+}
